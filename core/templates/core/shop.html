@@ -1,6 +1,63 @@
 {% extends 'core/base.html' %}
-{% block content  %}
+{% block content %}
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Contenedor que limita el alcance de Bootstrap -->
+<div style="all: initial; display: block;">
+    <div style="display:grid;grid-template-columns: repeat(3, minmax(300px, 1fr)); gap: 20px; justify-content: center; margin-top: 20px;margin-bottom: 20px;">
+        <div class="card" style="width: 18rem; padding: 10px;border-radius: 3rem 0.375rem 0.375rem  3rem; overflow: hidden;font-family: 'Fredoka', sans-serif;">
+            <img src="https://s3.ppllstatics.com/diariovasco/www/multimedia/2024/11/13/espresso-RrCckvN0LEAFk54KAQQPcXM-1200x840@Diario%20Vasco.jpg" class="card-img-top" alt="..." style="height: 200px; object-fit: cover; border-radius: 3rem 0.375rem 0.375rem  0.375rem; overflow: hidden" >
+            <div class="card-body">
+                <h5 class="card-title">Espresso</h5>
+                <p class="card-text">A bold, concentrated shot of coffee essence, delivering intense flavor and rich aroma in every sip.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #C28B6C; border: #C28B6C;">buy</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;padding: 10px;font-family: 'Fredoka', sans-serif;" ">
+            <img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/314D11A6-4457-4C70-A1BE-A6C25F597C18/Derivates/B362DC69-6AAA-43E1-AF51-184463E8551B.jpg" class="card-img-top" alt="..." style="height: 200px; object-fit: cover">
+            <div class="card-body">
+                <h5 class="card-title">Machiato</h5>
+                <p class="card-text">A perfect harmony of bold espresso gently 'stained' with a delicate touch of frothy milk.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #C28B6C; border: #C28B6C;">buy</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; padding: 10px;border-radius: 0.375rem 3rem 3rem  0.375rem; overflow: hidden;font-family: 'Fredoka', sans-serif;">
+            <img src="https://www.sugarsalted.com/wp-content/uploads/2024/06/ice-cream-iced-coffee-whipped-cream-008.jpg" class="card-img-top" alt="..." style="height: 200px; object-fit: cover;border-radius: 0.375rem 3rem 0.375rem  0.375rem; overflow: hidden;">
+            <div class="card-body">
+                <h5 class="card-title">Coffee & cream</h5>
+                <p class="card-text">A comforting blend of smooth coffee and creamy milk, creating a balanced and soothing beverage.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #C28B6C; border: #C28B6C;">buy</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; padding: 10px;border-radius: 3rem 0.375rem 0.375rem  3rem; overflow: hidden;font-family: 'Fredoka', sans-serif;">
+            <img src="https://www.hersheyland.com/content/dam/hersheyland/en-us/recipes/recipe-images/2-hersheys-perfectly-chocolate-chocolate-cake-recipe-hero.jpg?im=Resize=(1920)" class="card-img-top" alt="..." style="height: 200px; object-fit: cover; border-radius: 3rem 0.375rem 0.375rem  0.375rem; overflow: hidden">
+            <div class="card-body">
+                <h5 class="card-title">Chocolate cake</h5>
+                <p class="card-text">The indulgent pairing of rich, aromatic coffee alongside decadent chocolate cake for a perfect moment of sweetness.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #C28B6C; border: #C28B6C;">buy</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; padding: 10px; font-family: 'Fredoka', sans-serif;">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2024/09/EXPS_TOHD24_91184_LaurenHabermehl_7.jpg?fit=300,300&webp=1" class="card-img-top" alt="..." style="height: 200px; object-fit: cover">
+            <div class="card-body">
+                <h5 class="card-title">Amaretto Cheesecake</h5>
+                <p class="card-text">A velvety, rich dessert infused with the sweet, nutty essence of amaretto, crowned with a delicate crumb crust.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #C28B6C; border: #C28B6C;">buy</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem; padding: 10px;border-radius: 0.375rem 3rem 3rem  0.375rem; overflow: hidden;font-family: 'Fredoka', sans-serif;">
+            <img src="https://immigrantstable.com/wp-content/uploads/2024/06/Brazilian-passionfruit-mousse-33.jpg" class="card-img-top" alt="..." style="height: 200px; object-fit: cover;border-radius: 0.375rem 3rem 0.375rem  0.375rem; overflow: hidden;">
+            <div class="card-body">
+                <h5 class="card-title">Passion mouse</h5>
+                <p class="card-text">A light, airy dessert bursting with the vibrant, tangy-sweet flavor of tropical passion fruit.</p>
+                <a href="#" class="btn btn-primary" style="background-color: #C28B6C; border: #C28B6C;">buy</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
